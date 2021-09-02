@@ -1,4 +1,5 @@
-import Head from 'next/head'
+import Head from 'next/head';
+// import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -16,6 +17,16 @@ export default function Home() {
         <p className="description">
           Get started by editing <code>pages/index.js</code>
         </p>
+
+        {/* <Image
+          src="/wallpaper.jpg"
+          height={300}
+          width={300}
+          alt="wallpaper"
+          objectFit="cover"
+        /> */}
+
+        <img src="/wallpaper.jpg" height="300px" width="300px" />
 
         <div className="grid">
           <a href="https://nextjs.org/docs" className="card">
@@ -54,8 +65,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className="logo" />
+          Powered by <img src="/vercel.svg" alt="Vercel" className="logo" />
         </a>
       </footer>
 
@@ -205,5 +215,5 @@ export default function Home() {
         }
       `}</style>
     </div>
-  )
+  );
 }
