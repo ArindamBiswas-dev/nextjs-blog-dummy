@@ -1,6 +1,8 @@
 import Head from 'next/head';
 // import Image from 'next/image';
 
+const prefix = '/nextjs-blog-dummy';
+
 export default function Home() {
   return (
     <div className="container">
@@ -26,7 +28,7 @@ export default function Home() {
           objectFit="cover"
         /> */}
 
-        <img src="/wallpaper.jpg" height="300px" width="300px" />
+        <img src={prefix + '/wallpaper.jpg'} height="300px" width="300px" />
 
         <div className="grid">
           <a href="https://nextjs.org/docs" className="card">
