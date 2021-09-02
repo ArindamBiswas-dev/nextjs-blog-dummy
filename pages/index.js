@@ -8,7 +8,7 @@ export default function Home() {
     <div className="container">
       <Head>
         <title>Create Next App</title>
-        <link rel="icon" href={prefix + '/wallpaper.jpg'} />
+        <link rel="icon" href={prefix + '/public/favicon.ico'} />
       </Head>
 
       <main>
